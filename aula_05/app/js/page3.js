@@ -3,7 +3,8 @@ $(document).ready(function () {
     e.preventDefault(); // avoid to execute the actual submit of the form.
 
     var form = $(this);
-    console.log(form.serialize());
+    console.log(form.serialize()); //transforma informações do form e transforma em parâmetros
+    
 
     $.ajax({
       type: "POST",
